@@ -118,3 +118,64 @@ void guardarRecorridosEnArchivo(vector<recorrido> recorridos, string nombreArchi
 
 }
 
+
+/************++*********************** Auxiliares tiempoTotal ************++*********************/
+tiempo minimoTiempo(viaje v) {      /*  saca el tiempo minimo */
+    tiempo mini = obtenerTiempo(v[0]);
+    for (int i =0; i <v.size(); i++) {
+        if ( mini > obtenerTiempo(v[i])) {
+            mini = obtenerTiempo(v[i]);
+        }
+    }
+    return mini;
+}
+
+tiempo maximoTiempo(viaje v) {   /*  saca el tiempo maximo */
+    tiempo max = obtenerTiempo(v[0]);
+    for (int i =0; i <v.size(); i++) {
+        if ( max < obtenerTiempo(v[i])) {
+            max = obtenerTiempo(v[i]);
+        }
+    }
+    return  max;
+}
+
+
+/************++*********************** auxiliares distanciaTotal ************++*********************/
+void swapNuevo ( viaje &v , int i, int j) {
+        tuple <tiempo, gps> k= v[i];
+        v[i]= v[j];
+        v[j]=k;
+    }
+
+void seleccionarMinimo ( viaje &v , int i) {
+    int posMinimo = i;
+    for(int j=i; j< v.size () ; j++) {
+        if( obtenerTiempo(v[posMinimo]) > obtenerTiempo(v[j])) {
+            posMinimo = j;
+        }
+    }
+    swapNuevo(v ,i, posMinimo ) ;
+}
+
+
+
+    viaje viajeOrdenadoNuevo (viaje v) {
+        for(int i=0; i < v.size() ; i++) {
+            seleccionarMinimo (v ,i) ;
+        }
+        return v;
+    }
+
+
+
+
+/************++*********************** auxiliares excesodevelocidad ************++*********************/
+
+double  velocidadEntrepuntos(tuple <tiempo, gps> i , tuple <tiempo, gps> j) {
+    double v = distEnKM(obtenerPosicion(i),obtenerPosicion(j))/((obtenerTiempo(j) - obtenerTiempo(i))/3600);
+
+    return v;
+}
+
+/************++*********************** auxiliares flota ************++*********************/

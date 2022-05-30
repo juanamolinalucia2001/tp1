@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/auxiliares.h
+definiciones.h
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
+string
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/string
+
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
+vector
+-
+tuple
+-
+cmath
+-
+
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.cpp
+ejercicios.h
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.h
+auxiliares.h
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/auxiliares.h
+iostream
+-
+algorithm
+-
+fstream
+-
+iomanip
+-
+
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.h
+definiciones.h
+C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
+
