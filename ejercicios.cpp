@@ -42,9 +42,12 @@ bool excesoDeVelocidad(viaje v) {
 
 /************************************ EJERCICIO recorridoCubierto *******************************/
 vector<gps> recorridoNoCubierto(viaje v, recorrido r, distancia u) {
-    vector<gps> resp;
-    // codigo
-
+    vector<gps> resp = {};
+    for(int i = 0; i<r.size();i++){
+    if(!cubierto(v, r[i], u)){
+        resp.push_back(r[i]);
+        }
+        }
     return resp;
 }
 
@@ -52,7 +55,7 @@ vector<gps> recorridoNoCubierto(viaje v, recorrido r, distancia u) {
 int flota(vector<viaje> f, tiempo t0, tiempo tf) {
     int resp = 0;
     for (int i = 0; i < f.size(); i++)
-       if ( !(((t0 < minimoTiempo(f[i])) && (tf < minimoTiempo(f[i])))  || ((t0 > maximoTiempo(f[i])) && (tf > maximoTiempo(f[i]))))){
+       if ( estaEnRango ( f[i],  t0, tf )){
            resp = resp + 1;
 
         }
@@ -64,16 +67,31 @@ int flota(vector<viaje> f, tiempo t0, tiempo tf) {
 /************************************** EJERCICIO construirGrilla *******************************/
 grilla construirGrilla(gps esq1, gps esq2, int n, int m) {
     grilla resp = {};
-    // codigo
-
+    for (int i = 1 ; i <= n ; i++) {
+        for (int j = 1; j <= m; j++) {
+            resp.push_back( make_tuple(esquinaIzquierda(i, j, esq1, esq2, n, m), esquinaDerecha(i, j, esq1, esq2, n, m), make_tuple(i,j)));
+        }
+    }
     return resp;
 }
 
+
 /************************************* EJERCICIO cantidadDeSaltos ******************************/
 int cantidadDeSaltos(grilla g, viaje v) {
-    int resp;
-    // codigo
+    viaje t = viajeOrdenadoNuevo(v);
+    vector<nombre> n;
+    for(int k = 0; k<g.size(); k++) {
+        for (int i = 0; i < t.size(); i++) {
+            if (esCelda(obtenerPosicion(t[i]), g[k])) {
+                n.push_back(get<2>(g[k]));
+            }
+        }
+    }
 
+    int resp = 0;
+    for (int j = 0; j< n.size()-1;j++){
+        resp = CantidadSaltos(n[j], n[j+1]) + resp;
+    }
     return resp;
 }
 

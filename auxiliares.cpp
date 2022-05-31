@@ -166,7 +166,7 @@ void seleccionarMinimo ( viaje &v , int i) {
         }
         return v;
     }
-
+/***  uso de selection sort dado por la practica ***/
 
 
 
@@ -179,3 +179,69 @@ double  velocidadEntrepuntos(tuple <tiempo, gps> i , tuple <tiempo, gps> j) {
 }
 
 /************++*********************** auxiliares flota ************++*********************/
+
+bool estaEnRango (viaje f, tiempo t0, tiempo tf ){
+bool res = false;
+    if ( !(((t0 < minimoTiempo(f)) && (tf < minimoTiempo(f)))  || ((t0 > maximoTiempo(f)) && (tf > maximoTiempo(f))))){
+    res = true;
+
+}
+    return res ;
+}
+
+/************++*********************** auxiliares RecorridoNoCubierto ************++*********************/
+
+bool cubierto(viaje v, gps r, distancia u){
+   bool res = false;
+    for(int i = 0; i<v.size(); i++)
+        if ( distEnKM(obtenerPosicion(v[i]), r) < u){
+            res = true;
+            break;
+        }
+    return res;
+
+}
+
+/************++*********************** auxiliares counstruirGrilla ************++*********************/
+
+gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m){           /**** Crea la esquina Superior ***/
+    gps esqizq;
+    get<0>(esqizq) = obtenerLatitud(esq1) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/m) * (i - 1);
+    get<1>(esqizq) =  obtenerLongitud(esq1) + (( obtenerLongitud(esq2)- obtenerLongitud(esq1))/n) * (j - 1);
+    return esqizq;
+}
+
+gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m){       /**** Crea la esquina inferior ***/
+    gps esqder;
+    get<0>(esqder) = obtenerLatitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m)) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/m);
+    get<1>(esqder) = obtenerLongitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m))  +  ((obtenerLongitud(esq2) - obtenerLongitud(esq1))/n);
+    return esqder;
+}
+
+
+/************++*********************** auxiliares counstruirGrilla ************++*************** ***/
+
+
+bool esCelda(gps t , celda g){
+    bool res = false;
+    if ( (  obtenerLatitud(get<0>(g))  <= obtenerLatitud(t) < obtenerLatitud(get<1>(g))  ) &&
+    ( obtenerLongitud(get<0>(g)) <= obtenerLongitud(t)   < obtenerLongitud(get<1>(g)))){
+        res = true;
+
+    }
+
+    return res;
+
+}
+
+
+int CantidadSaltos (nombre n, nombre n1 ){
+    if ( sqrt(pow(get<0>(n) - get<0>(n1),2)  + pow(get<1>(n) - get<1>(n1),2) ) > 1) {
+        return 1;
+    } else {
+        return 0;
+
+    }
+
+
+}

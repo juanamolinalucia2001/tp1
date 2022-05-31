@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020\bin\cmake\win\bin\cmake.exe" -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\thiag\Desktop\python-course\labo\template-alumnos
+CMAKE_SOURCE_DIR = C:\Users\thiag\Desktop\Github\tp1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tpi.dir/depend.make
@@ -79,156 +79,156 @@ include CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/main.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/main.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/main.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tpi.dir/main.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\main.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tpi.dir/main.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\main.obj -c C:\Users\thiag\Desktop\Github\tp1\main.cpp
 
 CMakeFiles/tpi.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/main.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\main.cpp > CMakeFiles\tpi.dir\main.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\main.cpp > CMakeFiles\tpi.dir\main.i
 
 CMakeFiles/tpi.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/main.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\main.cpp -o CMakeFiles\tpi.dir\main.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\main.cpp -o CMakeFiles\tpi.dir\main.s
 
 CMakeFiles/tpi.dir/auxiliares.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/auxiliares.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/auxiliares.obj: ../auxiliares.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tpi.dir/auxiliares.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\auxiliares.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\auxiliares.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tpi.dir/auxiliares.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\auxiliares.obj -c C:\Users\thiag\Desktop\Github\tp1\auxiliares.cpp
 
 CMakeFiles/tpi.dir/auxiliares.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/auxiliares.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\auxiliares.cpp > CMakeFiles\tpi.dir\auxiliares.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\auxiliares.cpp > CMakeFiles\tpi.dir\auxiliares.i
 
 CMakeFiles/tpi.dir/auxiliares.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/auxiliares.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\auxiliares.cpp -o CMakeFiles\tpi.dir\auxiliares.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\auxiliares.cpp -o CMakeFiles\tpi.dir\auxiliares.s
 
 CMakeFiles/tpi.dir/ejercicios.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/ejercicios.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/ejercicios.obj: ../ejercicios.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tpi.dir/ejercicios.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\ejercicios.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\ejercicios.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tpi.dir/ejercicios.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\ejercicios.obj -c C:\Users\thiag\Desktop\Github\tp1\ejercicios.cpp
 
 CMakeFiles/tpi.dir/ejercicios.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/ejercicios.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\ejercicios.cpp > CMakeFiles\tpi.dir\ejercicios.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\ejercicios.cpp > CMakeFiles\tpi.dir\ejercicios.i
 
 CMakeFiles/tpi.dir/ejercicios.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/ejercicios.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\ejercicios.cpp -o CMakeFiles\tpi.dir\ejercicios.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\ejercicios.cpp -o CMakeFiles\tpi.dir\ejercicios.s
 
 CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.obj: ../testEnunciado/cantidadDeSaltosTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\cantidadDeSaltosTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\cantidadDeSaltosTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\cantidadDeSaltosTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\cantidadDeSaltosTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/cantidadDeSaltosTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\cantidadDeSaltosTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\cantidadDeSaltosTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\cantidadDeSaltosTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.obj: ../testEnunciado/construirGrillaTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\construirGrillaTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\construirGrillaTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\construirGrillaTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\construirGrillaTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/construirGrillaTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\construirGrillaTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\construirGrillaTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\construirGrillaTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.obj: ../testEnunciado/corregirViajeTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\corregirViajeTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\corregirViajeTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\corregirViajeTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\corregirViajeTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/corregirViajeTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\corregirViajeTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\corregirViajeTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\corregirViajeTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.obj: ../testEnunciado/distanciaTotalTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\distanciaTotalTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\distanciaTotalTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\distanciaTotalTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\distanciaTotalTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/distanciaTotalTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\distanciaTotalTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\distanciaTotalTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\distanciaTotalTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.obj: ../testEnunciado/excesoDeVelocidadTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\excesoDeVelocidadTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\excesoDeVelocidadTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\excesoDeVelocidadTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\excesoDeVelocidadTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/excesoDeVelocidadTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\excesoDeVelocidadTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\excesoDeVelocidadTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\excesoDeVelocidadTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/flotaTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/flotaTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/flotaTEST.obj: ../testEnunciado/flotaTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/flotaTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\flotaTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\flotaTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/flotaTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\flotaTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\flotaTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/flotaTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/flotaTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\flotaTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\flotaTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\flotaTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\flotaTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/flotaTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/flotaTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\flotaTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\flotaTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\flotaTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\flotaTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.obj: ../testEnunciado/recorridoNoCubiertoTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\recorridoNoCubiertoTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\recorridoNoCubiertoTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\recorridoNoCubiertoTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\recorridoNoCubiertoTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/recorridoNoCubiertoTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\recorridoNoCubiertoTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\recorridoNoCubiertoTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\recorridoNoCubiertoTEST.s
 
 CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.obj: CMakeFiles/tpi.dir/flags.make
 CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.obj: CMakeFiles/tpi.dir/includes_CXX.rsp
 CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.obj: ../testEnunciado/tiempoTotalTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.obj"
-	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.obj -c C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\tiempoTotalTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.obj"
+	C:\mingw\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.obj -c C:\Users\thiag\Desktop\Github\tp1\testEnunciado\tiempoTotalTEST.cpp
 
 CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.i"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\tiempoTotalTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.i
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thiag\Desktop\Github\tp1\testEnunciado\tiempoTotalTEST.cpp > CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.i
 
 CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tpi.dir/testEnunciado/tiempoTotalTEST.s"
-	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\python-course\labo\template-alumnos\testEnunciado\tiempoTotalTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.s
+	C:\mingw\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thiag\Desktop\Github\tp1\testEnunciado\tiempoTotalTEST.cpp -o CMakeFiles\tpi.dir\testEnunciado\tiempoTotalTEST.s
 
 # Object files for target tpi
 tpi_OBJECTS = \
@@ -265,7 +265,7 @@ tpi_EXTERNAL_OBJECTS =
 ../tpi.exe: CMakeFiles/tpi.dir/linklibs.rsp
 ../tpi.exe: CMakeFiles/tpi.dir/objects1.rsp
 ../tpi.exe: CMakeFiles/tpi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ..\tpi.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ..\tpi.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tpi.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -278,6 +278,6 @@ CMakeFiles/tpi.dir/clean:
 .PHONY : CMakeFiles/tpi.dir/clean
 
 CMakeFiles/tpi.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\thiag\Desktop\python-course\labo\template-alumnos C:\Users\thiag\Desktop\python-course\labo\template-alumnos C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug C:\Users\thiag\Desktop\python-course\labo\template-alumnos\cmake-build-debug\CMakeFiles\tpi.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\thiag\Desktop\Github\tp1 C:\Users\thiag\Desktop\Github\tp1 C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug C:\Users\thiag\Desktop\Github\tp1\cmake-build-debug\CMakeFiles\tpi.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tpi.dir/depend
 

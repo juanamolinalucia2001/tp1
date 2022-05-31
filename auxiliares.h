@@ -18,6 +18,12 @@ void swap(tuple<tiempo, gps>  a, tuple<tiempo, gps>  b);
 void ordenarViaje (viaje &v);
 viaje viajeOrdenadoNuevo (viaje v);
 double  velocidadEntrepuntos(tuple <tiempo, gps> i , tuple <tiempo, gps> j);
+bool cubierto(viaje v, gps r, distancia u);
+bool estaEnRango (viaje f, tiempo t0, tiempo tf );
+gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
+gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
+bool esCelda(gps t , celda g);
+int CantidadSaltos (nombre n, nombre n1 );
 void guardarGrillaEnArchivo(grilla g, string nombreArchivo);
 void guardarRecorridosEnArchivo(vector<recorrido> recorridos, string nombreArchivo);
 

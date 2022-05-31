@@ -6,25 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/auxiliares.h
-definiciones.h
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
-string
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/string
-
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
-vector
+C:/Users/thiag/Desktop/Github/tp1/auxiliares.cpp
+algorithm
 -
-tuple
--
-cmath
--
-
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.cpp
-ejercicios.h
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.h
 auxiliares.h
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/auxiliares.h
+C:/Users/thiag/Desktop/Github/tp1/auxiliares.h
 iostream
 -
 algorithm
@@ -34,7 +20,17 @@ fstream
 iomanip
 -
 
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/ejercicios.h
+C:/Users/thiag/Desktop/Github/tp1/auxiliares.h
 definiciones.h
-C:/Users/thiag/Desktop/python-course/labo/template-alumnos/definiciones.h
+C:/Users/thiag/Desktop/Github/tp1/definiciones.h
+string
+C:/Users/thiag/Desktop/Github/tp1/string
+
+C:/Users/thiag/Desktop/Github/tp1/definiciones.h
+vector
+-
+tuple
+-
+cmath
+-
 
