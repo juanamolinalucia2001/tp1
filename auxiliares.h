@@ -24,6 +24,7 @@ gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
 gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
 bool esCelda(gps t , celda g);
 int CantidadSaltos (nombre n, nombre n1 );
+bool PerteneceAErrores(tiempo v , vector<tiempo> errores);
 void guardarGrillaEnArchivo(grilla g, string nombreArchivo);
 void guardarRecorridosEnArchivo(vector<recorrido> recorridos, string nombreArchivo);
 

@@ -26,3 +26,5 @@ TEST(flotaTotalTEST, AlgunosAdentro){
     EXPECT_EQ(flota(f, 1.8,2.55),2);
 }
 
+
+/****** El test suite dado cubre todas las lineas ****/

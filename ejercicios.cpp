@@ -9,23 +9,28 @@ using namespace std;
 
 /******++++**************************** EJERCICIO tiempoTotal ***********+++***********************/
 tiempo tiempoTotal(viaje v) {
-    tiempo t;
-    tiempo min = minimoTiempo(v);
-    tiempo  max = maximoTiempo(v);
-    return t = max - min;
-}
+    tiempo t = 0;   /****** 1 *****/
+    tiempo min = minimoTiempo(v);   /***** en el peor caso se ejecuta n veces  *****/
+    tiempo  max = maximoTiempo(v); /***** en el peor caso se ejecuta n veces  *****/
+    return t = max - min;   /**** 2 ***/
+ }
+
+ /*****  2n + 3 = O(n)  ******/
 
 /************++*********************** EJERCICIO distanciaTotal ************++*********************/
 distancia distanciaTotal(viaje v) {
-    distancia d = 0;
-   viaje t = viajeOrdenadoNuevo(v);
-    for(int i=0; i<v.size()-1;i++){
+    distancia d = 0; /****  1  ***/
+   viaje t = viajeOrdenadoNuevo(v);       /*** se ejecuta n^2 veces ya que usa algoritmo de selection sortt ***/
+    for(int i=0; i<v.size()-1;i++){            /*****  se ejecuta en el peor caso n veces ***/
         d= distEnKM(obtenerPosicion(t[i]),obtenerPosicion(t[i+1])) + d;
 
     }
 
-    return d;
+    return d;  /*** 1  ***/
 }
+
+/******   n^2 + n + 2  = O(n^2) **** /
+
 
 /*****************************+***** EJERCICIO excesoDeVelocidad **********************************/
 bool excesoDeVelocidad(viaje v) {
@@ -42,14 +47,17 @@ bool excesoDeVelocidad(viaje v) {
 
 /************************************ EJERCICIO recorridoCubierto *******************************/
 vector<gps> recorridoNoCubierto(viaje v, recorrido r, distancia u) {
-    vector<gps> resp = {};
-    for(int i = 0; i<r.size();i++){
-    if(!cubierto(v, r[i], u)){
-        resp.push_back(r[i]);
+    vector<gps> resp = {};   /***** 1 vez  ****/
+    for(int i = 0; i<r.size();i++){    /******* En el peor caso se ejecuta la  m veces que es el tamaño de r  ***/
+    if(!cubierto(v, r[i], u)){              /******* En el peor caso se ejecuta la  n veces que es el tamaño de v  ***/
+        resp.push_back(r[i]);           /***** 1     *****/
         }
         }
-    return resp;
+    return resp;     /*****  1 vez  ******/
 }
+
+/***** se ejecuta m x n + 3 veces en el peor de casos, es decir O( n x m)     ****/
+
 
 /***************************************** EJERCICIO flota ***************************************/
 int flota(vector<viaje> f, tiempo t0, tiempo tf) {
@@ -89,7 +97,7 @@ int cantidadDeSaltos(grilla g, viaje v) {
     }
 
     int resp = 0;
-    for (int j = 0; j< n.size()-1;j++){
+    for (int j = 0; j < n.size();j++){
         resp = CantidadSaltos(n[j], n[j+1]) + resp;
     }
     return resp;
@@ -98,7 +106,21 @@ int cantidadDeSaltos(grilla g, viaje v) {
 
 /************************************* EJERCICIO corregirViaje ******************************/
 void corregirViaje(viaje& v, vector<tiempo> errores){
-    // codig
+
+    for(int i = 0; i < v.size(); i++){
+            if  (PerteneceAErrores(obtenerTiempo(v[i]), errores) ){
+
+
+
+            } else {
+
+
+            }
+
+
+        }
+
+
 
     return;
 }

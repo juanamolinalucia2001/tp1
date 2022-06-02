@@ -70,8 +70,9 @@ TEST(recorridoNoCubiertoTEST, viajeConImperfeccionesMayoresAlUmbral){
         v.push_back(medicion(i, desviarPunto(R[i], 0, desvios[i])));
     }
 
-    vector<gps> res = recorridoNoCubierto(v, R, 100);
+    vector<gps> res = recorridoNoCubierto(v, R, 0.1);
     EXPECT_EQ(res.size(), 3);
     ASSERT_ELEMENTS(res, {R[3], R[0], R[2]});
 
 }
+/********  el test suite dado cubre todas las lineas ******/

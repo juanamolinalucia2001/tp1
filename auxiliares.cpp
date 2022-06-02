@@ -245,3 +245,32 @@ int CantidadSaltos (nombre n, nombre n1 ){
 
 
 }
+/************++*********************** auxiliares CorregirViaje ************++*************** ***/
+bool PerteneceAErrores(tiempo v , vector<tiempo> errores){
+    if(errores.size()==0)
+        return false;
+    else {
+        int i=0;
+        bool pertenece = true;
+        while( (i < errores.size()) && pertenece){
+            pertenece = errores[i] != v;
+            i++;
+        }
+        return !pertenece;
+    }
+}
+
+void gpsSobreRecta  (gps &x, gps a, gps b ) {     /***** pasar por referencia x ***/
+    if (obtenerLatitud(a) != obtenerLatitud(b) ) {
+        get<1>(x) = ((((obtenerLongitud(a) - obtenerLongitud(b)) / (obtenerLatitud(a) - obtenerLatitud(b))) *
+                      obtenerLatitud(x))
+                     + (((obtenerLongitud(b) * obtenerLatitud(a)) - (obtenerLongitud(a) * obtenerLatitud(b)))) /
+                       (obtenerLatitud(a) - obtenerLatitud(b)));    /** a = p y b = q **/
+
+    }else {
+             get<0>(x) = obtenerLatitud(a);
+         }
+    return;
+    }
+
+

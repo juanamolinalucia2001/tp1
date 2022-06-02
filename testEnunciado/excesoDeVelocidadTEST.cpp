@@ -22,3 +22,15 @@ TEST(excesoDeVelocidadTEST, superaLaVelocidad){
 
     EXPECT_TRUE(excesoDeVelocidad(v));
 }
+
+
+/******* Test del grupo  ******/
+
+
+TEST(excesoDeVelocidadTEST, superaLaVelocidadDesordenado){
+    viaje v = {medicion(0.0, P),
+               medicion(unaHora*2, desviarPunto(P, 200000, 0)),
+               medicion(unaHora, desviarPunto(P, 100000, 0))}; // 100 KM por hora.
+
+    EXPECT_TRUE(excesoDeVelocidad(v));
+}

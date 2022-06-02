@@ -16,3 +16,4 @@ TEST(distanciaTotalTEST, viajeDesordenado){
     EXPECT_NEAR(distanciaTotal(v), 4.0, 0.01);
 }
 
+/****  No es necesario agregar test ya que el dado cubre todas las lineas   *****/

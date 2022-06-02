@@ -21,3 +21,18 @@ TEST(tiempoTotalTEST, viajeLargo){
     EXPECT_DOUBLE_EQ(tiempoTotal(v),6.1);
 }
 
+/***  Test del grupo  ***/
+
+TEST(tiempoTotalTEST, viajeLargo2){
+    viaje v = {medicion(1.5, P),
+               medicion(1.1, P),
+               medicion(1.2, P),
+               medicion(2.2, P),
+               medicion(2.3, P),
+               medicion(5.2, P),
+               medicion(5.4, P),
+               medicion(5.5, P),
+               medicion(7.2, P),
+               medicion(1.9, P)};
+    EXPECT_DOUBLE_EQ(tiempoTotal(v),6.1);
+}

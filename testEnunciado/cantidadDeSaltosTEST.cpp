@@ -19,3 +19,4 @@ TEST(cantidadDeSaltosTEST, todosSaltosOrdenados){
     EXPECT_EQ(cantidadDeSaltos(g,v),2);
 }
 
+/*** Test de grupo ***/
