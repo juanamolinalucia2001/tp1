@@ -22,7 +22,7 @@ bool cubierto(viaje v, gps r, distancia u);
 bool estaEnRango (viaje f, tiempo t0, tiempo tf );
 gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
 gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
-bool esCelda(gps t , celda g);
+nombre esCelda(gps t , grilla g);
 int CantidadSaltos (nombre n, nombre n1 );
 bool PerteneceAErrores(tiempo v , vector<tiempo> errores);
 void guardarGrillaEnArchivo(grilla g, string nombreArchivo);

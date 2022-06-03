@@ -221,22 +221,25 @@ gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m){     
 
 /************++*********************** auxiliares counstruirGrilla ************++*************** ***/
 
+nombre esCelda( gps t , grilla g){
+    nombre celda;
+        for (int  j = 0; j < g.size(); j++) {
+          if  ( ( get<0>(get<0>(g[j]))  <= get<0>(t) < get<0>(get<1>(g[j]))  ) &&
+         ( get<1>(get<0>(g[j])) <=  get<1>(t)   < get<1>(get<1>(g[j])))) {
 
-bool esCelda(gps t , celda g){
-    bool res = false;
-    if ( (  obtenerLatitud(get<0>(g))  <= obtenerLatitud(t) < obtenerLatitud(get<1>(g))  ) &&
-    ( obtenerLongitud(get<0>(g)) <= obtenerLongitud(t)   < obtenerLongitud(get<1>(g)))){
-        res = true;
+              celda = get<2>(g[j]);
+              break;
+
+          }
 
     }
 
-    return res;
+    return celda;
 
 }
 
-
 int CantidadSaltos (nombre n, nombre n1 ){
-    if ( sqrt(pow(get<0>(n) - get<0>(n1),2)  + pow(get<1>(n) - get<1>(n1),2) ) > 1) {
+    if ( sqrt(pow(get<0>(n) - get<0>(n1),2)  + pow(get<1>(n) - get<1>(n1),2) ) >= 2) {
         return 1;
     } else {
         return 0;
