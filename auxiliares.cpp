@@ -206,25 +206,25 @@ bool cubierto(viaje v, gps r, distancia u){
 
 gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m){           /**** Crea la esquina Superior ***/
     gps esqizq;
-    get<0>(esqizq) = obtenerLatitud(esq1) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/m) * (i - 1);
-    get<1>(esqizq) =  obtenerLongitud(esq1) + (( obtenerLongitud(esq2)- obtenerLongitud(esq1))/n) * (j - 1);
+    get<0>(esqizq) = obtenerLatitud(esq1) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/n) * (i - 1);
+    get<1>(esqizq) =  obtenerLongitud(esq1) + (( obtenerLongitud(esq2)- obtenerLongitud(esq1))/m) * (j - 1);
     return esqizq;
 }
 
 gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m){       /**** Crea la esquina inferior ***/
     gps esqder;
-    get<0>(esqder) = obtenerLatitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m)) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/m);
-    get<1>(esqder) = obtenerLongitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m))  +  ((obtenerLongitud(esq2) - obtenerLongitud(esq1))/n);
+    get<0>(esqder) = obtenerLatitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m)) - ((obtenerLatitud(esq1)- obtenerLatitud(esq2))/n);
+    get<1>(esqder) = obtenerLongitud(esquinaIzquierda ( i ,  j,   esq1,   esq2 ,   n ,   m))  +  ((obtenerLongitud(esq2) - obtenerLongitud(esq1))/m);
     return esqder;
 }
 
 
-/************++*********************** auxiliares counstruirGrilla ************++*************** ***/
+/************++*********************** auxiliares cantidadDeSaltos ************++*************** ***/
 
 nombre esCelda( gps t , grilla g){
     nombre celda;
         for (int  j = 0; j < g.size(); j++) {
-          if  ( ( get<0>(get<0>(g[j]))  <= get<0>(t) < get<0>(get<1>(g[j]))  ) &&
+          if  ( ( get<0>(get<0>(g[j]))  < get<0>(t) <= get<0>(get<1>(g[j]))  ) &&
          ( get<1>(get<0>(g[j])) <=  get<1>(t)   < get<1>(get<1>(g[j])))) {
 
               celda = get<2>(g[j]);
@@ -238,6 +238,7 @@ nombre esCelda( gps t , grilla g){
 
 }
 
+
 int CantidadSaltos (nombre n, nombre n1 ){
     if ( sqrt(pow(get<0>(n) - get<0>(n1),2)  + pow(get<1>(n) - get<1>(n1),2) ) >= 2) {
         return 1;
@@ -249,6 +250,35 @@ int CantidadSaltos (nombre n, nombre n1 ){
 
 }
 /************++*********************** auxiliares CorregirViaje ************++*************** ***/
+
+void swapNuevoErrores ( vector<tiempo> &e , int i, int j) {
+    tiempo k= e[i];
+    e[i]= e[j];
+    e[j]=k;
+}
+
+void seleccionarMinimoErrores ( vector<tiempo> &e , int i) {
+    int posMinimo = i;
+    for(int j=i; j< e.size () ; j++) {
+        if( e[posMinimo] > e[j]) {
+            posMinimo = j;
+        }
+    }
+    swapNuevoErrores(e ,i, posMinimo ) ;
+}
+
+
+vector<tiempo> erroresOrdenado (vector<tiempo> e) {
+    for(int i=0; i < e.size() ; i++) {
+        seleccionarMinimoErrores (e ,i) ;
+    }
+    return e;
+}
+
+
+
+
+
 bool PerteneceAErrores(tiempo v , vector<tiempo> errores){
     if(errores.size()==0)
         return false;
@@ -263,7 +293,7 @@ bool PerteneceAErrores(tiempo v , vector<tiempo> errores){
     }
 }
 
-void gpsSobreRecta  (gps &x, gps a, gps b ) {     /***** pasar por referencia x ***/
+void gpsSobreRecta  (gps x, gps a, gps b ) {     /***** pasar por referencia x ***/
     if (obtenerLatitud(a) != obtenerLatitud(b) ) {
         get<1>(x) = ((((obtenerLongitud(a) - obtenerLongitud(b)) / (obtenerLatitud(a) - obtenerLatitud(b))) *
                       obtenerLatitud(x))
@@ -275,5 +305,21 @@ void gpsSobreRecta  (gps &x, gps a, gps b ) {     /***** pasar por referencia x 
          }
     return;
     }
+
+void Correcciondepunto(viaje &v, vector<tiempo> errores, int indice ){
+    for(int j = indice+1; j<v.size()-1; j++ ){
+        if(!(PerteneceAErrores(obtenerTiempo(v[j]), errores))){
+          gpsSobreRecta(obtenerPosicion(v[indice]), obtenerPosicion(v[indice-1]) , obtenerPosicion(v[j]) );
+          break;
+
+
+        }
+
+
+    }
+
+
+}
+
 
 

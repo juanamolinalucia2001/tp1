@@ -101,13 +101,16 @@ int cantidadDeSaltos(grilla g, viaje v) {
 }
 /************************************* EJERCICIO corregirViaje ******************************/
 void corregirViaje(viaje& v, vector<tiempo> errores){
-
-    for(int i = 0; i < v.size(); i++){
-            if  (PerteneceAErrores(obtenerTiempo(v[i]), errores) ){
-
+viaje t = viajeOrdenadoNuevo(v);
+vector<tiempo> erroresOrd = erroresOrdenado(errores);
 
 
-            } else {
+    for(int i = 0; i < t.size(); i++){
+            if  (PerteneceAErrores(obtenerTiempo(t[i]), errores) ){
+                Correcciondepunto(t, erroresOrd, i );
+
+
+            }else {
 
 
             }
@@ -115,7 +118,7 @@ void corregirViaje(viaje& v, vector<tiempo> errores){
 
         }
 
-
+v = t;
 
     return;
 }

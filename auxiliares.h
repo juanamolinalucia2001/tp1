@@ -24,7 +24,9 @@ gps esquinaIzquierda (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
 gps esquinaDerecha (int i , int j,  gps esq1,  gps esq2 , int  n , int  m);
 nombre esCelda(gps t , grilla g);
 int CantidadSaltos (nombre n, nombre n1 );
+vector<tiempo> erroresOrdenado (vector<tiempo> e);
 bool PerteneceAErrores(tiempo v , vector<tiempo> errores);
+void Correcciondepunto(viaje &v, vector<tiempo> errores, int indice );
 void guardarGrillaEnArchivo(grilla g, string nombreArchivo);
 void guardarRecorridosEnArchivo(vector<recorrido> recorridos, string nombreArchivo);
 
