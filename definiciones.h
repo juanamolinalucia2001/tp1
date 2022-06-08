@@ -19,5 +19,7 @@ typedef tuple<int,int> nombre;
 typedef tuple<gps,gps,nombre> celda;
 typedef vector<celda> grilla;
 typedef vector<nombre> seqnombres;
+typedef tuple<tuple<tiempo, gps>,tuple<tiempo, gps>> Cercanos;
+
 
 #endif //TRANSPORTEURBANO_DEFINICIONES_H

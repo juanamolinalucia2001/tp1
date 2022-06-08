@@ -275,8 +275,14 @@ vector<tiempo> erroresOrdenado (vector<tiempo> e) {
     return e;
 }
 
+double absoluto (double x){
+    if (x > 0){
+        return x;
+    } else {
+        return -x;
+    }
 
-
+}
 
 
 bool PerteneceAErrores(tiempo v , vector<tiempo> errores){
@@ -293,33 +299,46 @@ bool PerteneceAErrores(tiempo v , vector<tiempo> errores){
     }
 }
 
-void gpsSobreRecta  (gps x, gps a, gps b ) {     /***** pasar por referencia x ***/
-    if (obtenerLatitud(a) != obtenerLatitud(b) ) {
-        get<1>(x) = ((((obtenerLongitud(a) - obtenerLongitud(b)) / (obtenerLatitud(a) - obtenerLatitud(b))) *
-                      obtenerLatitud(x))
-                     + (((obtenerLongitud(b) * obtenerLatitud(a)) - (obtenerLongitud(a) * obtenerLatitud(b)))) /
-                       (obtenerLatitud(a) - obtenerLatitud(b)));    /** a = p y b = q **/
 
-    }else {
-             get<0>(x) = obtenerLatitud(a);
-         }
-    return;
-    }
-
-void Correcciondepunto(viaje &v, vector<tiempo> errores, int indice ){
-    for(int j = indice+1; j<v.size()-1; j++ ){
-        if(!(PerteneceAErrores(obtenerTiempo(v[j]), errores))){
-          gpsSobreRecta(obtenerPosicion(v[indice]), obtenerPosicion(v[indice-1]) , obtenerPosicion(v[j]) );
-          break;
-
-
-        }
-
-
-    }
-
+double VelocidadLatitud ( tuple<tiempo,gps> x , tuple<tiempo,gps> y){
+    double velLat;
+    velLat = ((obtenerLatitud(get<1>(y)))-obtenerLatitud(get<1>(x)))/(get<0>(y)-get<0>(x));
+    return velLat;
 
 }
 
 
+double VelocidadLongitud ( tuple<tiempo,gps> x , tuple<tiempo,gps> y){
+    double velLong;
+    velLong = ((obtenerLongitud(get<1>(y)))-obtenerLongitud(get<1>(x)))/(get<0>(y)-get<0>(x));
+    return velLong;
+
+}
+
+void PuntoCorregido ( tuple<tiempo,gps> &errado,  tuple<tiempo,gps> x,  tuple<tiempo,gps> y ){
+    get<0>(get<1>(errado)) = obtenerLatitud(get<1>(x)) + VelocidadLatitud(x, y) *(obtenerTiempo(errado) - obtenerTiempo(x));
+    get<1>(get<1>(errado)) = obtenerLongitud(get<1>(x)) + VelocidadLongitud(x, y) *(obtenerTiempo(errado) - obtenerTiempo(x));
+    return;
+
+}
+
+Cercanos MasCercanos( viaje e , int error , vector<tiempo> errores) {
+    int masCerca = 0;
+    for(int j=0; j< e.size () ; j++) {
+        if( obtenerTiempo(e[j]) != obtenerTiempo(e[error]) && absoluto (obtenerTiempo(e[j]) - obtenerTiempo(e[error])) < absoluto( obtenerTiempo(e[masCerca]) - obtenerTiempo(e[error]))
+        && !PerteneceAErrores(obtenerTiempo(e[j]), errores)) {
+            masCerca = j;
+        }
+    }
+        int masCerca2 = 0;
+    for(int i=0; i< e.size () ; i++) {
+        if( obtenerTiempo(e[i]) != obtenerTiempo(e[error]) && absoluto (obtenerTiempo(e[i]) - obtenerTiempo(e[error])) <  absoluto (obtenerTiempo(e[masCerca]) - obtenerTiempo(e[error]))
+           && masCerca != i && !PerteneceAErrores(obtenerTiempo(e[i]), errores)) {
+            masCerca2 = i;
+        }
+    }
+
+
+return make_tuple(e[masCerca],e[masCerca2]);
+}
 

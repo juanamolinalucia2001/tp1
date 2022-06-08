@@ -26,7 +26,8 @@ nombre esCelda(gps t , grilla g);
 int CantidadSaltos (nombre n, nombre n1 );
 vector<tiempo> erroresOrdenado (vector<tiempo> e);
 bool PerteneceAErrores(tiempo v , vector<tiempo> errores);
-void Correcciondepunto(viaje &v, vector<tiempo> errores, int indice );
+Cercanos MasCercanos( viaje e , int error , vector<tiempo> errores);
+void PuntoCorregido ( tuple<tiempo,gps> &errado,  tuple<tiempo,gps> x,  tuple<tiempo,gps> y );
 void guardarGrillaEnArchivo(grilla g, string nombreArchivo);
 void guardarRecorridosEnArchivo(vector<recorrido> recorridos, string nombreArchivo);
 
